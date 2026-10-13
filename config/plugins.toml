@@ -1,0 +1,30 @@
+# Plugin host configuration for ai-ad-banner-creative-generator
+# Loaded by core.host at startup. Paths are relative to the repo root.
+
+[host]
+assets_root = "assets"
+render_root = "renders"
+export_root = "exports"
+max_workers = 4
+deterministic_default_seed = 6767
+
+[enabled]
+# Order matters: later plugins can override earlier style hooks.
+plugins = [
+    "ad_creative_copygen",
+    "ad_creative_styler",
+    "ad_creative_brandkit",
+    "ad_creative_exporter",
+]
+
+[disabled]
+plugins = [
+    "ad_creative_experimental_diffusion",
+]
+
+[capabilities]
+# Default capability grants per plugin. Overridden by each plugin's manifest.
+"ad_creative_copygen" = ["net:http"]
+"ad_creative_styler" = ["fs:read"]
+"ad_creative_brandkit" = ["fs:read"]
+"ad_creative_exporter" = ["fs:write"]
