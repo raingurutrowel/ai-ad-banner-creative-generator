@@ -1,0 +1,1 @@
+"""Utility helpers. No domain logic lives here."""
