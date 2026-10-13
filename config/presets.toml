@@ -1,0 +1,23 @@
+# Built-in style presets. Extensions may register additional presets at load
+# time via the `style_presets` registry hook.
+
+[presets.flat_minimal]
+label = "Flat Minimal"
+palette = ["#0F172A", "#F8FAFC", "#38BDF8"]
+headline_font = "Inter-Bold"
+body_font = "Inter-Regular"
+corner_radius = 12
+
+[presets.bold_retail]
+label = "Bold Retail"
+palette = ["#DC2626", "#FACC15", "#111827"]
+headline_font = "Anton-Regular"
+body_font = "Roboto-Medium"
+corner_radius = 4
+
+[presets.soft_gradient]
+label = "Soft Gradient"
+palette = ["#A78BFA", "#FB7185", "#1E1B4B"]
+headline_font = "Poppins-SemiBold"
+body_font = "Poppins-Regular"
+corner_radius = 20
