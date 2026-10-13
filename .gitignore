@@ -1,0 +1,54 @@
+# Byte-compiled / optimized
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Distribution / packaging
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Test / coverage
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# Type checker / linter caches
+.mypy_cache/
+.ruff_cache/
+.dmypy.json
+
+# Runtime output from the creative generator
+renders/
+exports/
+cache/
+*.log
+
+# Generated banner/ad artifacts
+*.rendered.png
+*.rendered.jpg
+*.rendered.webp
+*.preview.mp4
+
+# Local config with API keys
+config/local.toml
+config/*.secret.toml
+.env
+
+# Editor / OS cruft
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
