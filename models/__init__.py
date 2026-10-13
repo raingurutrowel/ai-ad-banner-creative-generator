@@ -1,0 +1,1 @@
+"""Domain models — brief, brand kit, and variant shapes."""
